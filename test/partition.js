@@ -4,7 +4,7 @@ var tape = require('tape')
 var guard = require('guarded-array')
 var iota = require('iota-array')
 var genBoxes = require('./util/random-boxes')
-var genPartition = require('../lib/partition')
+var partition = require('../lib/partition').partitionTest
 
 // Type signature:
 //
@@ -14,7 +14,7 @@ var genPartition = require('../lib/partition')
 //  pred, a, b)
 //
 
-var partition = genPartition('pred(lo,hi,a0,a1)', ['pred', 'a0', 'a1'])
+//var partition = partitionModule.genPartition('pred(lo,hi,a0,a1)', ['pred', 'a0', 'a1'])
 
 function intervalContainsInterval(a0, a1, lo, hi) {
   return a0 <= lo && hi <= a1

@@ -1,5 +1,5 @@
 {
-  "name": "box-intersect",
+  "name": "higlass-box-intersect",
   "version": "1.0.2",
   "description": "Any dimensional box intersection",
   "main": "index.js",
@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "bit-twiddle": "^1.0.2",
-    "typedarray-pool": "^1.1.0"
+    "buffer": "^6.0.3"
   }
 }

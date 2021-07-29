@@ -4,7 +4,8 @@ var tape       = require('tape')
 var guard      = require('guarded-array')
 var iota       = require('iota-array')
 var genBoxes   = require('./util/random-boxes')
-var bruteForcePartial = require('../lib/brute').partial
+var bruteForcePartial = require('../lib/bruteMod').bruteForcePartial
+//var bruteForcePartial = require('../lib/brute').partial
 var misc = require('./util/misc')
 
 //Signature:
